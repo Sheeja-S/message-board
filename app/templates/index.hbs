@@ -1,0 +1,18 @@
+<h1> Welcome to Message-board </h1>
+
+Find all your answers right here!
+
+<ul>
+  {{#each model.messages as |message|}}
+    {{message-tile message=message}}
+ {{/each}}
+</ul>
+
+{{new-message saveMessage2="saveMessage3"}}
+
+
+<hr>
+
+{{#link-to 'about'}}About{{/link-to}}
+
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}

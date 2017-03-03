@@ -1,0 +1,24 @@
+{"messages" : [{
+
+  "question": "Why is earth round?",
+   "author": "Peter",
+   "note": "random question"
+}, {
+   "question": "How to learn coding?",
+   "author": "Tom",
+   "note": "valid question"
+}, {
+   "question": "Which are the best holiday destinations?",
+   "author": "Harry",
+   "note": "fun question"
+}]
+}
+
+{"answers": [{
+  "content": "God made it that way",
+  "author": "Andrea"
+}, {
+  "content": "Nice view of the volcano!",
+  "author": "Alex"
+}]
+}

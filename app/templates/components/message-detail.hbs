@@ -1,0 +1,8 @@
+<li>Note: {{message.note}}</li>
+<li>Author: {{message.author}}</li>
+<h2> Answers </h2>
+<ul>
+  {{#each message.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
