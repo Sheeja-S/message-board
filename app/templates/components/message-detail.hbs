@@ -1,6 +1,7 @@
 <li>Note: {{message.note}}</li>
 <li>Author: {{message.author}}</li>
 <h2> Answers </h2>
+<br>
 <ul>
   {{#each message.answers as |answer|}}
     {{answer-tile answer=answer}}

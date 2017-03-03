@@ -5,6 +5,7 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('message', params.message_id);
   },
+  actions:{
   saveAnswer(params) {
         var newAnswer = this.store.createRecord('answer', params);
         var message = params.message;
@@ -12,7 +13,7 @@ export default Ember.Route.extend({
         newAnswer.save().then(function() {
           return message.save();
         });
-        this.transitionTo('index');
+        this.transitionTo('message', message);
       }
-
+    }
 });
