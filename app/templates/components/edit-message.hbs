@@ -1,0 +1,29 @@
+{{#if editMessageForm}}
+  <h4>Edit {{message.question}} by {{message.author}}</h4>
+  <div>
+    <form>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author"
+         placeholder=message.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="question">Question</label>
+        {{input value=type id="question"
+         placeholder=message.question}}
+      </div>
+
+      <div class="form-group">
+        <label for="note">Note</label>
+        {{input value=note id="note"
+         placeholder=message.note}}
+      </div>
+
+      <button {{action 'edit' message}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'editMessageForm'}}>Edit</button>
+{{/if}}
