@@ -1,7 +1,9 @@
 # message-board
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+This website was created to help users find answers to their questions.
+ Message board is a platform where a user submits a question and other users can respond with answers.
 
 ## Prerequisites
 
@@ -19,6 +21,10 @@ You will need the following things properly installed on your computer.
 * `cd message-board`
 * `npm install`
 * `bower install`
+* `ember-cli`
+* `watchman`
+* `ember fire`
+
 
 ## Running / Development
 
@@ -27,7 +33,17 @@ You will need the following things properly installed on your computer.
 
 ### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+
+`ember new `
+`ember generate route about`
+`ember g route contact`
+`ember g route index`
+`ember g model `
+`ember g component`
+`ember g component`
+`ember g component`
+`ember g route`
+`ember g component`
 
 ### Running Tests
 

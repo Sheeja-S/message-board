@@ -8,9 +8,9 @@ export default Ember.Component.extend({
       },
       edit(message) {
         var params = {
-          owner: this.get('question'),
-          city: this.get('note'),
-          type: this.get('author')
+          question: this.get('question'),
+          note: this.get('note'),
+          author: this.get('author'),
         };
         this.set('editMessageForm', false);
         this.sendAction('edit', message, params);
